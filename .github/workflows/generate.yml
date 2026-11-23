@@ -5,7 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: "27 4 * * *" # 00:27 du matin heure du Québec
+    - cron: "5 4 * * *" # 00:05 heure avancée — UTC−4
+    - cron: "5 5 * * *" # 00:05 heure normale — UTC−5
   workflow_dispatch:      # permet de lancer à la main
 
 jobs:
